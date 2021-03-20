@@ -1,8 +1,8 @@
 <?php
     class User
     {
-        public $username;
-        public $password;
+        protected $username;
+        protected $password;
 
         public function login(){
             return '$this->username berhasil loginn';

@@ -2,10 +2,10 @@
     require_once("User.php");
     class Pegawai extends User
     {
-        public $nip;
-        public $nama;
-        public $no_hp;
-        public $gaji_pokok;
+        protected $nip;
+        protected $nama;
+        protected $no_hp;
+        protected $gaji_pokok;
 
         function __construct($nip, $nama, $hp, $gaji){
             $this->nip = $nip;

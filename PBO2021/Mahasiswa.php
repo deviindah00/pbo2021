@@ -2,10 +2,10 @@
     require_once("User.php");
     class Mahasiswa extends User
     {
-        public $nim;
-        public $nama;
-        public $tanggal_lahir;
-        public $jenis_kelamin;
+        protected $nim;
+        protected $nama;
+        protected $tanggal_lahir;
+        protected $jenis_kelamin;
 
         function __construct($nim, $nama, $tgl, $jk){
             $this->nim = $nim;
