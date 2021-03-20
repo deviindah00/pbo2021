@@ -14,5 +14,13 @@
         public function bayarGedung(){
 
         }
+
+    public function setNoRegristrasi($no_regristrasi){
+        $this->no_registrasi=$no_regristrasi;
     }
+
+    public function getNoRegristrasi(){
+        return $this->no_registrasi;
+    }
+}
 ?>

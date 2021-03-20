@@ -17,5 +17,31 @@
         public function tampilkanGaji(){
             echo "Jumlah Gaji : $this->gaji_pokok";
         }
+
+    public function setNip($nip){
+        $this->nip=$nip;
     }
+    public function setNama($nama){
+        $this->nama=$nama;
+    }
+    public function setNoHp($no_hp){
+        $this->no_hp=$no_hp;
+    }
+    public function setGajiPokok($gaji_pokok){
+        $this->gaji_pokok=$gaji_pokok;
+    }
+
+    public function getNip(){
+        return $this->nip;
+    }
+    public function getNama(){
+        return $this->nama;
+    }
+    public function getNoHp(){
+        return $this->no_hp;
+    }
+    public function getGajiPokok(){
+        return $this->gaji_pokok;
+    }
+}
 ?>

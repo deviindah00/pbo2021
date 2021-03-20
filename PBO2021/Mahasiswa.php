@@ -25,5 +25,31 @@
         public function tampilkanNama(){
             echo $this->nama;
         }
+
+    public function setNama($nama){
+        $this->nama=$nama;
     }
+    public function setNim($nim){
+        $this->nim=$nim;
+    }
+    public function setTanggalLahir($tanggal_lahir){
+        $this->tanggal_lahir=$tanggal_lahir;
+    }
+    public function setJanisKelamin($jenis_kelamin){
+        $this->jenis_kelamin=$jenis_kelamin;
+    }
+
+    public function getNama(){
+        return $this->nama;
+    }
+    public function getNim(){
+        return $this->nim;
+    }
+    public function getTanggalLahir(){
+        return $this->tanggal_lahir;
+    }
+    public function getJenisKelamin(){
+        return $this->jenis_kelamin;
+    }
+}
 ?> 
