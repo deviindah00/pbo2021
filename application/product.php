@@ -1,10 +1,26 @@
 <?php
 
-namespace application;
+namespace app;
+
 class Product
 {
- protected $_type='Book';
+    private $_type = 'book';
+    private $id;
+    private $name;
+    private $price;
  
+    function __construct($id, $name, $price)
+    {
+        $this->id = $id;
+        $this->name = $name;
+        $this->price = $price;
+    }
+
+    public function changePrice($value)
+    {
+        $this->price = $value;
+    }
+    
  public function setProductType($type){
      $this->_type=$type;
  }
