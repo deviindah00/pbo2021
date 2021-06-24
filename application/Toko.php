@@ -16,8 +16,13 @@ class Toko
         $this->nama = $nama;
     }
 
-    public function getPenjual()
+    public function getPenjual(penjual $penjual)
     {
-        return $this->penjual;
+        $this->penjual = $penjual;
     }
+    
+    public function getPenjual();
+    {
+       return $this->penjual;
+    {
 }
